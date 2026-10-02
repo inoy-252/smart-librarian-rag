@@ -110,7 +110,7 @@ GROUNDED ANSWER:"""
 
 SIMILARITY_THRESHOLD = 0.50
 
-print("\n🚀 Smart Librarian RAG v4 is ready! Ask anything about the library.")
+print("\nSmart Librarian RAG v4 is ready! Ask anything about the library.")
 print("Type 'quit' to exit.")
 
 while True:
@@ -125,7 +125,7 @@ while True:
     best_doc, best_score = retrieve_best_doc(user_query, documents)
 
     if best_score < SIMILARITY_THRESHOLD or best_doc is None:
-        print("\n❌ FALLBACK TRIGGERED:")
+        print("\nFALLBACK TRIGGERED:")
         print("   No sufficiently relevant knowledge found in the library.")
         print(
             f"   (Highest similarity was {best_score:.4f}, below required threshold {SIMILARITY_THRESHOLD:.2f})"
@@ -136,7 +136,7 @@ while True:
     final_answer = generate_grounded_answer(user_query, best_doc["content"])
 
     print("\n" + "=" * 60)
-    print("📚 SMART LIBRARIAN ANSWER:")
+    print("SMART LIBRARIAN ANSWER:")
     print(final_answer)
     print("=" * 60)
     print(f"Source Citation: Smart Librarian Knowledge Base -> [{best_doc['topic']}]")

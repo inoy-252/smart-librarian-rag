@@ -1,4 +1,4 @@
-# 📚 Smart Librarian: Minimalist RAG System from Scratch
+# Smart Librarian: Minimalist RAG System from Scratch
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -8,13 +8,13 @@ A pure Python, dependency-free implementation of a **Retrieval-Augmented Generat
 
 ---
 
-## 🌟 Overview
+## Overview
 
 Before modern LLM frameworks like LangChain or LlamaIndex, the fundamental problem of information retrieval was built on tokenization, stopword removal, and vocabulary overlap. **Smart Librarian** breaks down this retrieval architecture into clear, readable stages, demonstrating how an AI assistant selects the most relevant knowledge snippet before formulating a response.
 
 ---
 
-## 🚀 Version Evolution
+## Version Evolution
 
 The project is structured into progressive iterations demonstrating software engineering and NLP concepts from first principles to modern generative AI:
 
@@ -27,7 +27,7 @@ The project is structured into progressive iterations demonstrating software eng
 
 ---
 
-## 🧠 How It Works (Pipeline Architecture)
+## How It Works (Pipeline Architecture)
 
 ### 1. Lexical / Keyword Pipeline (`v1` - `v3`)
 ```mermaid
@@ -58,7 +58,7 @@ flowchart LR
 
 ---
 
-## 💻 Quickstart & Usage
+## Quickstart & Usage
 
 ### Option A: Zero-Dependency Interactive CLI (`v3`)
 No external libraries or pip installations required!
@@ -89,7 +89,7 @@ echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
 python rag_v4.py
 ```
 
-### 💡 Example Interactive Session (`v4`):
+### Example Interactive Session (`v4`):
 
 ```text
 ============================================================
@@ -100,7 +100,7 @@ INDEXING: Generating semantic vectors for knowledge documents...
 All documents indexed into vector space!
 ============================================================
 
-🚀 Smart Librarian RAG v4 is ready! Ask anything about the library.
+Smart Librarian RAG v4 is ready! Ask anything about the library.
 Type 'quit' to exit.
 
  Ask a question: Which game uses rifles and shrinking danger zones
@@ -115,7 +115,7 @@ RETRIEVED TOPIC: [PUBG] (Confidence: 0.6305)
  Synthesizing grounded answer with Gemini 3.5 Flash Lite...
 
 ============================================================
-📚 SMART LIBRARIAN ANSWER:
+SMART LIBRARIAN ANSWER:
 The game is PUBG. According to the context, PUBG is an action-based
 online game where players eliminate each other using loot supplies
 like guns (including rifles), and features danger zones known as the
@@ -126,7 +126,7 @@ Source Citation: Smart Librarian Knowledge Base -> [PUBG]
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```text
 smart-librarian-rag/
@@ -141,7 +141,7 @@ smart-librarian-rag/
 
 ---
 
-## 🔮 Roadmap / Future Enhancements
+## Roadmap / Future Enhancements
 
 - [x] Implement cosine similarity using NumPy vector embeddings.
 - [x] Connect with an LLM API (Gemini) to generate synthesized prose answers grounded in retrieved knowledge.
@@ -150,6 +150,6 @@ smart-librarian-rag/
 
 ---
 
-## 👤 Author
+## Author
 
 **Yasir Lone ([@inoy-252](https://github.com/inoy-252))**
